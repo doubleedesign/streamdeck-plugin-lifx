@@ -1,0 +1,24 @@
+{
+	"name": "streamdeck-plugin-lifx",
+	"description": "My attempt at a Lifx control plugin",
+	"type": "module",
+	"version": "0.0.1",
+	"author": "Leesa Ward",
+	"homepage": "https://github.com/doubleedesign/streamdeck-plugin-lifx#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/doubleedesign/streamdeck-plugin-lifx.git"
+	},
+	"scripts": {
+		"build": "rollup --config rollup.config.js",
+		"dev": "rollup --config rollup.config.js --watch"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^11.1.5",
+		"rollup": "^4.7.0",
+		"typescript": "^5.3.3"
+	},
+	"engines": {
+		"node": "^19.0.1"
+	}
+}

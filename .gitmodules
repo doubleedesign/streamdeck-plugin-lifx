@@ -1,0 +1,3 @@
+[submodule "src/com.doubleedesign.lifx.sdPlugin/libs/streamdeck-javascript-sdk"]
+	path = src/com.doubleedesign.lifx.sdPlugin/libs/streamdeck-javascript-sdk
+	url = https://github.com/elgatosf/streamdeck-javascript-sdk

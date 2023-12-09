@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"lib": ["es5", "es6", "dom"],
+		"target": "esnext",
+		"esModuleInterop": true,
+		"allowJs": true,
+	},
+	"include": ["./src/com.doubleedesign.lifx.sdPlugin/actions/**/*.ts"],
+	"exclude": ["./src/com.doubleedesign.lifx.sdPlugin/libs/streamdeck-javascript-sdk/*"]
+}

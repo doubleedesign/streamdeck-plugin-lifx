@@ -1,0 +1,39 @@
+{
+	"SDKVersion": 2,
+	"Author": "Leesa Ward",
+	"CodePath": "app.html",
+	"Description": "My attempt at a Lifx control plugin",
+	"Name": "Leesa's Lifx",
+	"Icon": "assets/app-icon",
+	"URL": "https://www.github.com/doubleedesign/streamdeck-plugin-lifx",
+	"Version": "0.0.1",
+	"Software": {
+		"MinimumVersion": "5.0"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.11"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Category": "Leesa's Lifx",
+	"CategoryIcon": "assets/app-icon",
+	"Actions": [
+		{
+			"Icon": "assets/default-icon",
+			"Name": "Toggle power",
+			"States": [
+				{
+					"Image": "assets/default-icon"
+				}
+			],
+			"Tooltip": "Toggle power of a light group",
+			"UUID": "com.doubleedesign.lifx.action.toggle.power",
+			"PropertyInspectorPath": "actions/toggle.power/property-inspector/inspector.html"
+		}
+	]
+}
