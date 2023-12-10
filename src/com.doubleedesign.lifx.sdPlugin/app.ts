@@ -2,10 +2,10 @@
 /// <reference path="libs/streamdeck-javascript-sdk/js/stream-deck.js" />
 
 import toggleAction from './actions/toggle.power/index';
-import { API_URL } from "./constants";
+import { API_URL } from './constants';
 
 // @ts-ignore
-$SD.onConnected(async ({actionInfo, appInfo, connection, messageType, port, uuid}) => {
+$SD.onConnected(async ({ actionInfo, appInfo, connection, messageType, port, uuid }) => {
 	console.log('Stream Deck connected!');
 
 	try {
