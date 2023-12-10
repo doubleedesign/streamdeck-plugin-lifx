@@ -1,11 +1,22 @@
 /// <reference path="../../../libs/streamdeck-javascript-sdk/js/property-inspector.js" />
 /// <reference path="../../../libs/streamdeck-javascript-sdk/js/utils.js" />
 
-$PI.onConnected((jsn) => {
-	const form = document.querySelector('#property-inspector');
+import { api } from '../../../libs/api.js';
+
+$PI.onConnected(async (jsn) => {
+	const form = document.getElementById('property-inspector');
+	const selectbox = document.getElementById('group');
 	const { actionInfo, appInfo, connection, messageType, port, uuid } = jsn;
 	const { payload, context } = actionInfo;
 	const { settings } = payload;
+	const groups = await api.getGroups();
+
+	groups.forEach(group => {
+		let option = document.createElement('option');
+		option.text = group.label;
+		option.value = group.group;
+		selectbox.add(option);
+	});
 
 	Utils.setFormValue(settings, form);
 

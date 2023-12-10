@@ -1,8 +1,7 @@
 /// <reference path="libs/streamdeck-javascript-sdk/js/action.js" />
 /// <reference path="libs/streamdeck-javascript-sdk/js/stream-deck.js" />
-
+import { API_URL } from './libs/api.js';
 import toggleAction from './actions/toggle.power/index';
-import { API_URL } from './constants';
 
 // @ts-ignore
 $SD.onConnected(async ({ actionInfo, appInfo, connection, messageType, port, uuid }) => {
